@@ -13,11 +13,14 @@ CREATE TABLE cust_tb
 )
 /
 
+
 PROMPT *-*-*-*-*-*-*-*-   CREATING cust_tb ENDS.... *-*-*-*-*-*-*-*-
 
 PROMPT *-*-*-*-*-*-*-*-   CREATING inc_seq sequence STARTS.... *-*-*-*-*-*-*-*-
 
 DROP SEQUENCE inc_seq;
+
+
 
 CREATE SEQUENCE inc_seq
 MINVALUE 1
