@@ -9,7 +9,9 @@ AS
   v_inst_id      NUMBER;
   v_file_data    VARCHAR2(3000);
   v_obj_data     report_typ:=report_typ();
+  
 BEGIN
+
 v_inst_id:=batch_tracking_pkg.batch_instance_fn('REP_OBJ_SP','ALL','ALL');
 SELECT rep_obj(ref_id,cust_id,mobile,issue_typ,issue_desc,status,req_by,req_dttm,apr_by,apr_dttm,rej_by,rej_dttm,rej_desc,info_cng_num) 
        BULK COLLECT INTO v_obj_data FROM inc_mgmt_tb;
